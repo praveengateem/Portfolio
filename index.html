@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Praveen Kumar Gattem — AI / Full-Stack Engineer</title>
+<meta name="description" content="Praveen Kumar Gattem — Generative AI &amp; RAG application developer, full-stack engineer. Building retrieval-augmented systems, ML pipelines, and web platforms.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="progress-rail"><div class="progress-fill" id="progressFill"></div></div>
+
+<header class="header" id="header">
+  <a href="#home" class="logo">PG<span class="logo-dot">.</span></a>
+
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="nav-link active" data-section="home"><span class="nav-tag">01</span>Home</a>
+    <a href="#about" class="nav-link" data-section="about"><span class="nav-tag">02</span>About</a>
+    <a href="#pipeline" class="nav-link" data-section="pipeline"><span class="nav-tag">03</span>Stack</a>
+    <a href="#experience" class="nav-link" data-section="experience"><span class="nav-tag">04</span>Experience</a>
+    <a href="#projects" class="nav-link" data-section="projects"><span class="nav-tag">05</span>Projects</a>
+    <a href="#contact" class="nav-link" data-section="contact"><span class="nav-tag">06</span>Contact</a>
+  </nav>
+
+  <a href="assets/resume.pdf" download class="header-resume">
+    <i class='bx bx-download'></i> Resume
+  </a>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="home" id="home">
+    <div class="home-bg">
+      <svg class="home-bg-grid" viewBox="0 0 1200 800" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.035)" stroke-width="1"/>
+          </pattern>
+        </defs>
+        <rect width="1200" height="800" fill="url(#gridPattern)"/>
+      </svg>
+    </div>
+
+    <div class="home-content">
+      <p class="eyebrow"><span class="eyebrow-dot"></span>Available for full-time roles · Graduating 2026</p>
+
+      <h1 class="hero-title">
+        I build systems that
+        <span class="hero-cycle-wrap">retrieve<span class="hero-cursor">|</span></span>
+      </h1>
+
+      <p class="hero-sub">
+        Praveen Kumar Gattem — final-year Computer Science engineer specializing in
+        <strong>Generative AI &amp; RAG applications</strong>, with a full-stack and applied ML foundation underneath.
+        I connect documents to language models, models to interfaces, and interfaces to people who need answers fast.
+      </p>
+
+      <div class="hero-pipeline" aria-hidden="true">
+        <div class="hp-step" style="--d:0s"><span class="hp-label">Query</span></div>
+        <div class="hp-arrow">→</div>
+        <div class="hp-step" style="--d:.6s"><span class="hp-label">Embed</span></div>
+        <div class="hp-arrow">→</div>
+        <div class="hp-step" style="--d:1.2s"><span class="hp-label">Retrieve</span></div>
+        <div class="hp-arrow">→</div>
+        <div class="hp-step" style="--d:1.8s"><span class="hp-label">Generate</span></div>
+      </div>
+
+      <div class="btn-box">
+        <a href="assets/resume.pdf" download class="btn btn-primary">
+          <i class='bx bx-download'></i> Download Resume
+        </a>
+        <a href="https://github.com/praveengateem" target="_blank" rel="noopener" class="btn btn-ghost">
+          <i class='bx bxl-github'></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/praveen-kumar-gattem-1b8736316/" target="_blank" rel="noopener" class="btn btn-ghost">
+          <i class='bx bxl-linkedin'></i> LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <div class="home-image">
+      <div class="home-image-frame">
+        <img src="assets/profile.jpg" alt="Praveen Kumar Gattem" onerror="this.parentElement.classList.add('img-fallback')">
+        <div class="frame-fallback-text">PG</div>
+      </div>
+      <svg class="orbit-ring" viewBox="0 0 200 200" aria-hidden="true">
+        <circle cx="100" cy="100" r="96" fill="none" stroke="rgba(232,163,61,0.35)" stroke-width="1" stroke-dasharray="2 6"/>
+      </svg>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About">
+      <span>Scroll</span>
+      <i class='bx bx-chevron-down'></i>
+    </a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <p class="section-eyebrow">02 — About</p>
+    <h2 class="section-title">From dataset to deployed answer.</h2>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I'm a final-year B.Tech Computer Science student at GIET Engineering College, currently
+          building Generative AI and Retrieval-Augmented Generation applications as an intern at
+          ASA Solutions — integrating large language models with vector databases to turn static
+          documents into systems that can actually answer questions about themselves.
+        </p>
+        <p>
+          That's the latest layer. Underneath it is two years of full-stack and applied ML work:
+          Java and Angular in production-style sprints, classification and regression models
+          evaluated against real sensor data, and React/Firebase platforms shipped end to end.
+          I like the seam between a model's output and the interface a person actually touches —
+          that's usually where the real engineering happens.
+        </p>
+        <p>
+          I'm looking for a fresher role where that range — AI systems, backend logic, and the UI
+          layer that makes it usable — is the asset, not three separate hires.
+        </p>
+      </div>
+
+      <div class="about-stats">
+        <div class="stat-card">
+          <span class="stat-num" data-count="3">0</span>
+          <span class="stat-label">Internships completed</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" data-count="6">0</span>
+          <span class="stat-label">ML models compared in final-year project</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" data-count="4">0</span>
+          <span class="stat-label">Languages shipped in production code</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" data-count="2026">0</span>
+          <span class="stat-label">Graduating year</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-education">
+      <h3 class="sub-heading"><i class='bx bx-graduation'></i> Education</h3>
+      <div class="edu-row">
+        <div class="edu-year">2022 – 2026</div>
+        <div class="edu-detail">
+          <h4>B.Tech, Computer Science &amp; Engineering</h4>
+          <p>GIET Engineering College, Rajamahendravaram, Andhra Pradesh · CGPA 6.9</p>
+        </div>
+      </div>
+      <div class="edu-row">
+        <div class="edu-year">2020 – 2022</div>
+        <div class="edu-detail">
+          <h4>Intermediate (MPC)</h4>
+          <p>Sri Chaitanya Junior College, Tadepalligudem, Andhra Pradesh · 55%</p>
+        </div>
+      </div>
+      <div class="edu-row">
+        <div class="edu-year">2019 – 2020</div>
+        <div class="edu-detail">
+          <h4>SSC — 10th Grade</h4>
+          <p>ZPP High School, Bommidi, Andhra Pradesh · GPA 8.9</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS / PIPELINE ============ -->
+  <section class="pipeline" id="pipeline">
+    <p class="section-eyebrow">03 — Stack</p>
+    <h2 class="section-title">Skills, grouped the way I actually use them.</h2>
+    <p class="section-intro">
+      Most lists flatten everything to one grid. Mine doesn't — it's organized by where each
+      tool sits in a typical AI-application pipeline, from request to response.
+    </p>
+
+    <div class="pipeline-rail" aria-hidden="true">
+      <div class="rail-line"></div>
+    </div>
+
+    <div class="pipeline-grid">
+
+      <div class="pipeline-col" style="--accent: var(--amber)">
+        <div class="pcol-head">
+          <span class="pcol-index">01</span>
+          <h3>Interface &amp; Frontend</h3>
+          <p>Where the query gets typed.</p>
+        </div>
+        <div class="pcol-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">React.js</span>
+          <span class="tag">Angular</span>
+        </div>
+      </div>
+
+      <div class="pipeline-col" style="--accent: var(--violet)">
+        <div class="pcol-head">
+          <span class="pcol-index">02</span>
+          <h3>Retrieval &amp; Generation</h3>
+          <p>Where the answer gets found.</p>
+        </div>
+        <div class="pcol-tags">
+          <span class="tag">LangChain</span>
+          <span class="tag">OpenAI API</span>
+          <span class="tag">ChromaDB</span>
+          <span class="tag">Vector Search</span>
+          <span class="tag">Python</span>
+        </div>
+      </div>
+
+      <div class="pipeline-col" style="--accent: var(--cyan)">
+        <div class="pcol-head">
+          <span class="pcol-index">03</span>
+          <h3>Data &amp; ML</h3>
+          <p>Where the signal gets shaped.</p>
+        </div>
+        <div class="pcol-tags">
+          <span class="tag">SQL</span>
+          <span class="tag">XGBoost</span>
+          <span class="tag">SHAP</span>
+          <span class="tag">Matplotlib</span>
+          <span class="tag">Seaborn</span>
+        </div>
+      </div>
+
+      <div class="pipeline-col" style="--accent: var(--rose)">
+        <div class="pcol-head">
+          <span class="pcol-index">04</span>
+          <h3>Infrastructure &amp; Tools</h3>
+          <p>Where it all gets shipped.</p>
+        </div>
+        <div class="pcol-tags">
+          <span class="tag">Git &amp; GitHub</span>
+          <span class="tag">Firebase</span>
+          <span class="tag">AWS Basics</span>
+          <span class="tag">Postman</span>
+          <span class="tag">Selenium</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="cert-strip">
+      <h3 class="sub-heading"><i class='bx bx-certification'></i> Certifications</h3>
+      <div class="cert-list">
+        <div class="cert-item">
+          <i class='bx bx-badge-check'></i>
+          <div>
+            <h4>IT Specialist — Java (ITS)</h4>
+            <p>Certiport, a Pearson VUE Business · 2025</p>
+          </div>
+        </div>
+        <div class="cert-item">
+          <i class='bx bx-badge-check'></i>
+          <div>
+            <h4>Gen AI RAG Application Development</h4>
+            <p>ASA Solutions · 2026</p>
+          </div>
+        </div>
+        <div class="cert-item">
+          <i class='bx bx-badge-check'></i>
+          <div>
+            <h4>AI/ML &amp; Data Science</h4>
+            <p>Blackbucks Engineers · 2024</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="experience" id="experience">
+    <p class="section-eyebrow">04 — Experience</p>
+    <h2 class="section-title">Three internships, one widening scope.</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-card">
+          <div class="tc-head">
+            <span class="tc-date">Feb 2026 – Jul 2026</span>
+            <h3>Gen AI RAG Application Development Intern</h3>
+            <p class="tc-company">ASA Solutions</p>
+          </div>
+          <ul class="tc-points">
+            <li>Developed and enhanced RAG applications using Generative AI, integrating LLMs with vector databases for intelligent document retrieval.</li>
+            <li>Designed SQL queries for data management and collaborated with the team on requirement gathering, development, testing, and on-time delivery.</li>
+          </ul>
+          <div class="tc-tags"><span class="tag tag-sm">LangChain</span><span class="tag tag-sm">OpenAI API</span><span class="tag tag-sm">Vector DB</span><span class="tag tag-sm">SQL</span></div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-card">
+          <div class="tc-head">
+            <span class="tc-date">Jun 2025 – Aug 2025</span>
+            <h3>Java Full Stack Intern</h3>
+            <p class="tc-company">TECWING</p>
+          </div>
+          <ul class="tc-points">
+            <li>Developed UI screens using Java and Angular; collaborated with the team using Git, pull requests, and agile sprint cycles.</li>
+            <li>Gained hands-on understanding of how frontend and backend layers connect in a real-world project setup.</li>
+          </ul>
+          <div class="tc-tags"><span class="tag tag-sm">Java</span><span class="tag tag-sm">Angular</span><span class="tag tag-sm">Git</span><span class="tag tag-sm">Agile</span></div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-card">
+          <div class="tc-head">
+            <span class="tc-date">May 2024 – Jul 2024</span>
+            <h3>AI/ML &amp; Data Science Intern</h3>
+            <p class="tc-company">Blackbucks Engineers</p>
+          </div>
+          <ul class="tc-points">
+            <li>Worked on real-world datasets — cleaned data, handled missing values, and prepared features for model training.</li>
+            <li>Trained and evaluated ML models (classification, regression) and visualized results using Matplotlib and Seaborn.</li>
+          </ul>
+          <div class="tc-tags"><span class="tag tag-sm">Python</span><span class="tag tag-sm">Pandas</span><span class="tag tag-sm">Matplotlib</span><span class="tag tag-sm">Seaborn</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="projects" id="projects">
+    <p class="section-eyebrow">05 — Projects</p>
+    <h2 class="section-title">Things I've shipped end to end.</h2>
+
+    <div class="project-grid">
+
+      <article class="project-card project-card-feature">
+        <div class="pc-tag-row">
+          <span class="pc-stage" data-stage="retrieve">Retrieval · Generation</span>
+        </div>
+        <h3>Gen AI RAG Application</h3>
+        <p>
+          An AI-powered document-querying system built around semantic search. Documents are
+          chunked, embedded, and stored in a vector database; incoming questions are matched
+          against that store and passed to an LLM for a grounded, context-aware response —
+          generated in real time rather than templated.
+        </p>
+        <div class="pc-stack">
+          <span class="tag tag-sm">Python</span>
+          <span class="tag tag-sm">LangChain</span>
+          <span class="tag tag-sm">OpenAI API</span>
+          <span class="tag tag-sm">SQL</span>
+          <span class="tag tag-sm">Vector Database</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="pc-tag-row">
+          <span class="pc-stage" data-stage="data">ML · Explainability</span>
+        </div>
+        <h3>RUL Prediction for Aero Engines</h3>
+        <p class="pc-eyebrow">Final-year project</p>
+        <p>
+          A Flask web app predicting Remaining Useful Life of aircraft engines from sensor data,
+          benchmarking six ML models — Extra Trees and an MLP came out on top. SHAP explains
+          which features drove each prediction, and engines are classified Normal, Warning, or
+          Critical with maintenance recommendations attached.
+        </p>
+        <div class="pc-stack">
+          <span class="tag tag-sm">Flask</span>
+          <span class="tag tag-sm">XGBoost</span>
+          <span class="tag tag-sm">Random Forest</span>
+          <span class="tag tag-sm">SHAP</span>
+          <span class="tag tag-sm">MySQL</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="pc-tag-row">
+          <span class="pc-stage" data-stage="interface">Full-Stack</span>
+        </div>
+        <h3>Festio — Event Management Platform</h3>
+        <p>
+          A web platform built for college fests, covering event creation, registration tracking,
+          and real-time status updates. Secure authentication and a Firebase backend keep the
+          experience consistent whether someone's organizing from a laptop or registering from
+          their phone in line.
+        </p>
+        <div class="pc-stack">
+          <span class="tag tag-sm">React.js</span>
+          <span class="tag tag-sm">Firebase</span>
+          <span class="tag tag-sm">SQL</span>
+          <span class="tag tag-sm">JavaScript</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="pc-tag-row">
+          <span class="pc-stage" data-stage="interface">Full-Stack</span>
+        </div>
+        <h3>Student Cart</h3>
+        <p>
+          A campus ordering app letting students order food and stationery without leaving
+          campus — login auto-resolves block, year, and campus details, with 10-minute on-campus
+          delivery, dine-in seat booking, and a live, stock-aware menu.
+        </p>
+        <div class="pc-stack">
+          <span class="tag tag-sm">React</span>
+          <span class="tag tag-sm">Firebase</span>
+          <span class="tag tag-sm">SQL</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="pc-tag-row">
+          <span class="pc-stage" data-stage="retrieve">AI · Platform</span>
+        </div>
+        <h3>Vartha Vibe</h3>
+        <p>
+          A multilingual news platform curating personalized feeds in Telugu, Hindi, English,
+          and Kannada based on topic preference. A publisher contribution system lets users
+          submit news, with verified submissions earning reward points.
+        </p>
+        <div class="pc-stack">
+          <span class="tag tag-sm">JavaScript</span>
+          <span class="tag tag-sm">Firebase</span>
+          <span class="tag tag-sm">Responsive UI</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <p class="section-eyebrow">06 — Contact</p>
+    <h2 class="section-title">Let's build something that answers back.</h2>
+    <p class="contact-sub">
+      Open to fresher roles in AI engineering, full-stack development, or anywhere those two
+      overlap. I reply quickly — reach out directly or send a note below.
+    </p>
+
+    <div class="contact-grid">
+
+      <div class="contact-info">
+        <a href="mailto:gattempraveen88@gmail.com" class="contact-line">
+          <i class='bx bx-envelope'></i>
+          <span>gattempraveen88@gmail.com</span>
+        </a>
+        <a href="tel:+917981232448" class="contact-line">
+          <i class='bx bx-phone'></i>
+          <span>+91 79812 32448</span>
+        </a>
+        <a href="#" class="contact-line">
+          <i class='bx bx-map'></i>
+          <span>Uppakapadu, Andhra Pradesh</span>
+        </a>
+
+        <div class="social-icons">
+          <a href="https://github.com/praveengateem" target="_blank" rel="noopener" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+          <a href="https://www.linkedin.com/in/praveen-kumar-gattem-1b8736316/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <label for="cf-name">Name</label>
+          <input type="text" id="cf-name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-row">
+          <label for="cf-email">Email</label>
+          <input type="email" id="cf-email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-row">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="4" placeholder="What are you building?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit">
+          <span class="form-submit-text">Send Message</span>
+          <i class='bx bx-send'></i>
+        </button>
+        <p class="form-status" id="formStatus" aria-live="polite"></p>
+      </form>
+
+    </div>
+
+    <footer class="footer">
+      <p>Designed &amp; built by Praveen Kumar Gattem · <span id="footerYear"></span></p>
+    </footer>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
